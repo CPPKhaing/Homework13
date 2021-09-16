@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hw13.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="jquery3.6.0.js"></script>
+    <script type="text/javascript" src="hw13.js"></script>
+
+</head>
+<body>
+    <h1 id="ptitle">Product Management For Online Sales</h1>
+    <div id="show_Border" >
+        <div class="contactForm">
+            <div class="fontF">Item Name</div><br/>
+                <input type="text" class="field" id="pItem">
+                
+                <div class="fontF">Product</div><br/>
+                <select id="data" name="data" class="productName">
+                    <option value="bag">bag</option>
+                    <option value="show">shoe</option>
+                    <option vlaue="shirt">shirt</option>
+                    <option value="accessories">accessories</option>
+                </select>
+
+                <div class="fontF">Price</div><br/>
+                <input type="text" class="field" id="pPrice" >
+    
+                <div class="fontF">No. of Stock</div><br/>
+                <select id="data" name="data" class="stockNo">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    
+                </select>
+        
+                <button class="btn" onclick="click()">Add</button>
+        </div>
+        <div class="product">
+            <div class="card bagCard">
+                <div class="delete"> <ion-icon name="trash-outline"></ion-icon></div>
+                <div class="productImg">
+                    <img src="bag.png" alt="">
+                </div>
+                <div class="detail">
+                    <div class="pname"id ="bagName"></div>
+                    <div class="price" id="bagPrice"></div>
+                    <div class="stock" id="bagStock"></div>
+                </div>
+            </div>
+            <div class="card shoeCard">
+                <div class="delete"> <ion-icon name="trash-outline"></ion-icon></div>
+                <div class="productImg">
+                    <img src="sho_dior.png" alt="">
+                </div>
+                <div class="detail">
+                    <div class="pname" id="shoeName"></div>
+                    <div class="price" id="shoePrice"></div>
+                    <div class="stock" id="shoeStock"></div>
+                </div>
+            </div>
+            <div class="card shirtCard">
+                <div class="delete"> <ion-icon name="trash-outline"></ion-icon></div>
+                <div class="productImg">
+                    <img id="shirtimg"src="shirtD.webp" alt="">
+                </div>
+                <div class="detail">
+                    <div class="pname" id="shirtName"></div>
+                    <div class="price" id="shirtPrice"></div>
+                    <div class="stock" id="shirtStock"></div>
+                </div>
+            </div>
+            <div class="card glassesCard">
+                <div class="delete"> <ion-icon name="trash-outline"></ion-icon></div>
+                <div class="productImg">
+                    <img id="glassesImg" src="glasses.jpg" alt="">
+                </div>
+                <div class="detail">
+                    <div class="pname" id="glassesName"></div>
+                    <div class="price" id="glassesPrice"></div>
+                    <div class="stock" id="glassesStock"></div>
+                </div>
+            </div>
+            
+          
+        </div>
+    </div>
+</body>
+</html>
